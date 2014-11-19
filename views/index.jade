@@ -1,0 +1,149 @@
+extends layout
+
+block content
+	.section.maintron
+		.filter
+		video.img-responsive#bgvid(autoplay='', loop='', poster='http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg')
+			source(src='http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/homepage.webm', type='video/webm')
+			source(src='http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/shutterstock_v3702740_4.m4v', type='video/mp4')
+		.container.text-center
+			h1 Alexander Afzelius Puccini
+			h3 Webbutvecklare
+	.section.menu
+			ul
+				li
+					a Anställningar
+				li
+					a Om Alexander
+				li
+					a Projekt
+				li
+					a Utbildning
+	.section.section-me
+		.row
+			.col-lg-6
+				img.img-responsive(src="/images/slice1.png" style="max-height:800px; float: left;")
+			.col-lg-6(style="padding-top: 100px;")
+				.row
+					.col-md-4
+						h3 Arbetslivserfarenhet
+						p Casino Cosmopol
+							br
+							span.year
+								|2011 - 2014
+						p Burger King
+							br
+							span.year
+								|2009 - 2011
+						p Tyresö Rackethall
+							br
+							span.year
+								|2008
+						p Cafe Machiato
+							br
+							span.year
+								|2007 - 2008
+					.col-md-4
+						h3 Utbildning
+						p Teknikhögskolan 
+							br
+							|Applikationsutvecklare.Net
+							br
+							span.year
+								|2013 - 2015
+						p Livräddarkurs
+							br
+							span.year
+								|2008
+						p Tyresö Gymnasium 
+							br
+							|Samhällsvetenskapsprogrammet
+							br
+							span.year
+								|2005 - 2008
+					.col-md-4
+				.row
+					.col-md-8
+						h3 Om Alex
+						p
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium
+							|Lorem ispum text ipsum lorem nalbum ipsum dourum navium.
+
+	.section.section-me
+		.row
+			.col-lg-6
+				.containerProgress
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+					p HTML 5
+					.progress
+						.bar
+			.col-lg-6
+				img.img-responsive(src="/images/comp4.png" style="max-height:800px; float: right;")
+	//.section.section-city
+	//.container.blogposts
+		.row
+			.col-md-8.col-md-offset-2
+					.post
+						h2
+							|Jag tror jag gillar NodeJs
+						h4.date
+							img(src="http://kondensator.se/uploads/nodejs-1024x768.png", width="700px").blog-image.img-responsive
+						.post-text
+							|Lorem ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum
+							|ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum 
+							|ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum
+							hr.sm.left.top-btm-marg-sm
+	.canvas
+		header.page-header
+			h1 Välkommen till min blogg
+			p.summary Bloggar först och främst om programmering men även om mycket annat.
+		section
+			each val in ['Simple Post With a Longer Header', 'Yet Another Post', 'A Hello World Post']
+				article
+					header
+						.stick
+							h2= val
+							p.date 
+								| by 
+								a(href='#') Sly Stallone 
+								| on Nov. 12th 2014
+					div.content
+						p Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam non sodales dui. Sed sagittis tincidunt massa, quis porta mi finibus vel. 
+						p Aliquam ornare porttitor dapibus. Ut non quam tellus. Ut at urna feugiat tellus maximus consectetur. Integer tincidunt sapien ac nibh faucibus mattis. Nulla enim purus, auctor condimentum metus efficitur, commodo rutrum diam. Nunc non libero dolor.
+						blockquote Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.
+						p Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.
+						p Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.
+
