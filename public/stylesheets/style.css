@@ -32,8 +32,6 @@ a {
   color: #636466;
 }
 
-
-
 h1{
 	font-weight: 300 !important;
   font-size: 4.4em !important;
@@ -305,36 +303,7 @@ z-index: -100;
   font-size: 20px;
 }
 
-/*PROGRESS BAR*/
 
-.containerProgress {
-width: 300px;
-margin: 100px 75px 0;
-}
-
-.progress {
-overflow: hidden;
-height: 15px !important;
-
-background-color: #f7f7f7;
-background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
-background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
-background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
-background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
-background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
-background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f9f9f9', GradientType=0);
-
--webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
--moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  
--webkit-border-radius: 10px !important;
--moz-border-radius: 10px !important;
-border-radius: 10px !important;
-
-}
 /*MOBILE*/
 @media only screen and (max-width : 1220px) {
 }
@@ -365,18 +334,35 @@ border-radius: 10px !important;
 
 @media only screen and (max-width : 480px) {
 	p{
-		font-size: 1.5em !important;
+		font-size: 1.4em !important;
 	}
 
+  article{
+    margin: 0px !important;
+  }
+
+    h1{
+    font-size: 2.4em !important;
+  }
+
 	.ingress{
-		font-size: 1.6em !important;
+		font-size: 1.5em !important;
 	}
 
 	.icon{
 		margin-top: 25px !important;
 	}
 
+	.icons{
+		padding-top: 0px;
+	}
+
 	.section-header{
+		padding-top: 50px !important;
+		padding-bottom: 50px !important;
+	}
+
+	.section-projects{
 		padding-top: 50px !important;
 		padding-bottom: 50px !important;
 	}
@@ -451,18 +437,7 @@ article {
        box-sizing: border-box;
   position: relative;
 }
-article:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 30em;
-  left: 50%;
-  font-size: 1em;
-  border-bottom: 1px solid #ccc;
-  margin-left: -15em;
-  bottom: 0;
-  z-index: 1;
-}
+
 
 article:last-child:after,
 article:last-child:before {
