@@ -63,7 +63,21 @@ h3{
 .fill-text{
 	color: #887982;
 	background-color: #887982;
-	background-image: url(http://andershede.com/wp-content/uploads/2014/07/Godsbanen1.svg);
+	background-image: url(http://andershede.com/wp-content/uploads/2014/08/NorthSide.svg);
+  http://andershede.com/wp-content/uploads/2014/08/NorthSide.svg
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fill-text2{
+  color: #887982;
+  background-color: #887982;
+  background-image: url(http://andershede.com/wp-content/uploads/2014/07/Godsbanen1.svg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -80,12 +94,23 @@ h3{
 
 .card{
 	background-color: #f7f7f7;
-border: 1px solid #e9e9e9;
 width: 100%;
 height: 395px;
 padding: 55px;
 -webkit-border-radius: 2px;
 border-radius: 2px;
+}
+
+.card-cv{
+margin-top: 75px;
+background-color: #f7f7f7;
+width: 33%;
+margin-left: auto;
+margin-right: auto;
+padding: 25px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+text-align: center;
 }
 
 .card h3{
@@ -96,7 +121,7 @@ border-radius: 2px;
 }
 
 .card p{
-  font-size: 1.2em !important;
+  font-size: 1.3em !important;
 	line-height: 1.3em !important;
   margin: 0px !important;
   color: #666;
@@ -123,21 +148,27 @@ transition: all 225ms ease;
 .section-header{
 	padding-top: 150px;
 	padding-bottom: 150px;
+}
+.section-contact{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 
+.section-contact i {
+  padding: 25px;
 }
 .section-me{
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
 .section-wallpaper{
-	height: 700px;
-	background: url(/images/city.jpg) no-repeat center center fixed; 
+	height: 600px;
+  width: 100%;
+	background: url('/images/city.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 .section-projects{
@@ -156,7 +187,7 @@ transition: all 225ms ease;
 
 .section-projects p {
 
-  font-size: 1.2em !important;
+  font-size: 1.3em !important;
   line-height: 1.3em !important;
   margin: 0px !important;
   color: #666;
@@ -235,9 +266,10 @@ z-index: -100;
 .menu{
 	height: 75px;
 	text-align: center !important;
-    width:100%;
-    overflow:hidden;
-    position: relative;
+  width:100%;
+  overflow:hidden;
+  position: relative;
+  background-color: #f7f7f7;
 }
 
 .menu li {
@@ -344,6 +376,10 @@ z-index: -100;
 	h1{
 		font-size: 3.4em !important;
 	}
+
+  .card-cv{
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width : 480px) {
@@ -358,6 +394,9 @@ z-index: -100;
     h1{
     font-size: 2.6em !important;
   }
+  .card-cv{
+    width: 100%;
+  }
 
 	.ingress{
 		font-size: 1.5em !important;
@@ -369,6 +408,11 @@ z-index: -100;
 
   .section-wallpaper{
     height: 400px;
+  }
+
+  .section-me{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
   }
 
 	.icons{
@@ -385,6 +429,10 @@ z-index: -100;
 		padding-top: 50px !important;
 		padding-bottom: 50px !important;
 	}
+
+  .section-projects h2{
+    font-size: 35px !important;
+  }
 }
 
 
