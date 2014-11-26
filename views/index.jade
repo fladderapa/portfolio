@@ -12,13 +12,13 @@ block content
 	.section.menu
 			ul
 				li
-					a Anställningar
-				li
-					a Om Alexander
+					a Om mig
 				li
 					a Projekt
 				li
-					a Utbildning
+					a Cv
+				li
+					a Kontakt
 	.section.section-header
 		.container
 			.row
@@ -54,7 +54,7 @@ block content
 				.col-xs-12
 					h1.fill-text.text-center
 						|Min story
-					p.text-center
+					p.text-center.text-left
 						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
 						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
 						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
@@ -62,11 +62,27 @@ block content
 						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
 						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
 						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
+			.row.icons
+				.col-md-3
+				.col-md-2.text-center
+					p
+						i.fa.fa-flash.fa-2x.fill-text2
+					h4
+						|Träning
+				.col-md-2.text-center
+					p
+						i.fa.fa-headphones.fa-2x.fill-text2
+					h4 Podcast
+				.col-md-2.text-center
+					p
+						i.fa.fa-glass.fa-2x.fill-text2
+					h4 Umgås
+				.col-md-3
 	.section.section-cv
 		.container
 			.row
 				.col-md-4
-					.card.education
+					.card.text-center
 						h3 Utbildning
 						p Teknikhögskolan 
 							br
@@ -74,10 +90,6 @@ block content
 							br
 							span.year
 								|2013 - 2015
-						p Livräddarkurs
-							br
-							span.year
-								|2008
 						p Tyresö Gymnasium 
 							br
 							|Samhällsvetenskap
@@ -85,7 +97,7 @@ block content
 							span.year
 								|2005 - 2008
 				.col-md-4
-					.card.experience
+					.card.text-center
 						h3 Arbetslivserfarenhet
 						p Casino Cosmopol
 							br
@@ -104,10 +116,24 @@ block content
 							span.year
 								|2007 - 2008
 				.col-md-4
-					.card.courses
+					.card.text-center
 						h3 Kurser
+						p Världsmöte - Service i världsklass
+							br
+							span.year
+								|2011
+						p Spelansvarsutbildning
+							br
+							span.year
+								|2011
+						p Livräddarkurs
+							br
+							span.year
+								|2008
+		form(method="get" action="/images/Alexander-Afzelius-CV.pdf" target="_blank")
 			.card-cv
-				h3 Fullständigt cv
+				button.btn.btn-cv(type="submit")
+					h3 Fullständigt cv
 	.section.section-projects
 		h2.text-center
 			|Tidigare projekt
@@ -151,12 +177,17 @@ block content
 						|Va inte blyg
 					p.ingress.text-center
 						|Du är välkommen att maila mig på 
-						span.fill-text2 alex.afzelius@gmail.com 
+						a.fill-text2 alex.afzelius@gmail.com 
 						|eller fånga mig i följande sociala medier.
 					i.fa.fa-facebook.fa-3x.fill-text2
 					i.fa.fa-linkedin.fa-3x.fill-text2
 					i.fa.fa-github.fa-3x.fill-text2
 				.col-xs-2
+
+
+
+
+
 
 
 

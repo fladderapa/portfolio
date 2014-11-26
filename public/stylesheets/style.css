@@ -1,9 +1,10 @@
-body {
+html, body {
 font-family: 'Open Sans',Helvetica,Arial,sans-serif !important;
+width: 100%;
 }
 
 p{
-	color: black;
+	color: #1a2732 !important;
 	font-size: 1.6em !important;
 	line-height: 1.6em !important;
 	font-weight: 300 !important;
@@ -13,19 +14,6 @@ p{
 	font-style: normal;
 }
 
-.ingress{
-	color: black;
-	font-size: 1.8em !important;
-	line-height: 1.6em !important;
-	font-weight: 300 !important;
-	font-family: 'Lato' !important;
-	padding-top: 20px;
-}
-
-.icons{
-	padding-top: 75px;
-}
-
 a {
   color: #00B7FF;
   font-size: 18px;
@@ -33,18 +21,18 @@ a {
 }
 
 h1{
-	font-weight: 300 !important;
+  font-weight: 300 !important;
   font-size: 4.4em !important;
   line-height: 1.15 !important;
   text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
+  -webkit-font-smoothing: antialiased !important;
   font-family: 'Lato' !important;
-	font-style: normal;
+  font-style: normal;
 
 }
 
 h2{
-
+  color: #1a2732 !important;
   line-height: 46px !important;
   font-weight: 300 !important;
   font-size: 40px !important;
@@ -53,12 +41,24 @@ h2{
 
 h3{
 
-  font-size: 1.8em !important;
+  font-size: 1.5em !important;
   line-height: 1.6em !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   font-family: 'Lato' !important;
+  color: #1a2732 !important;
   
 }
+
+.ingress{
+	font-size: 1.8em !important;
+	padding-top: 20px;
+
+}
+
+.icons{
+	padding-top: 75px;
+}
+
 
 .fill-text{
 	color: #887982;
@@ -87,13 +87,44 @@ h3{
   -webkit-text-fill-color: transparent;
 }
 
-.section-story{
+/*SECTIONS*/
+.section-story, .section-header, .section-contact{
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
+.section-me, .section-cv{
+  padding-bottom: 150px;
+}
+
+.section-contact i {
+  padding: 25px;
+}
+
+.section-projects{
+  background-color: #f7f7f7;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.section-projects img{
+  height: 245px;
+}
+
+.section-projects h2 {
+  margin-bottom: 75px;
+}
+
+.section-projects p {
+  font-size: 1.3em !important;
+  line-height: 1.3em !important;
+  margin: 0px !important;
+  color: #666;
+}
+
+/*CARDS*/
 .card{
-	background-color: #f7f7f7;
+background-color: #f7f7f7;
 width: 100%;
 height: 395px;
 padding: 55px;
@@ -103,19 +134,24 @@ border-radius: 2px;
 
 .card-cv{
 margin-top: 75px;
-background-color: #f7f7f7;
-width: 33%;
 margin-left: auto;
 margin-right: auto;
-padding: 25px;
--webkit-border-radius: 2px;
-border-radius: 2px;
 text-align: center;
+width: 100%;
+}
+
+.btn-cv{
+  background-color: #f7f7f7;
+  padding: 10px 125px !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.card-cv :hover{
+  background-color: #D3D3D3 !important;
+  cursor: pointer;
 }
 
 .card h3{
-
-
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -125,73 +161,6 @@ text-align: center;
 	line-height: 1.3em !important;
   margin: 0px !important;
   color: #666;
-}
-
-.triangle-down{
-position: absolute;
-display: block;
-width: 80px;
-height: 80px;
-background: #fff;
-margin-top: -40px;
-margin-left: 50%;
--o-transform: translate(-50%, 0) rotate(-45deg);
--ms-transform: translate(-50%, 0) rotate(-45deg);
--moz-transform: translate(-50%, 0) rotate(-45deg);
--webkit-transform: translate(-50%, 0) rotate(-45deg);
-transform: translate(-50%, 0) rotate(-45deg);
--webkit-transition: all 225ms ease;
--moz-transition: all 225ms ease;
-transition: all 225ms ease;
-}
-
-.section-header{
-	padding-top: 150px;
-	padding-bottom: 150px;
-}
-.section-contact{
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.section-contact i {
-  padding: 25px;
-}
-.section-me{
-	padding-bottom: 150px;
-}
-
-.section-wallpaper{
-	height: 600px;
-  width: 100%;
-	background: url('/images/city.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.section-projects{
-	background-color: #f7f7f7;
-	padding-top: 150px;
-	padding-bottom: 150px;
-}
-
-.section-projects img{
-  height: 260px;
-}
-
-.section-projects h2 {
-	margin-bottom: 75px;
-}
-
-.section-projects p {
-
-  font-size: 1.3em !important;
-  line-height: 1.3em !important;
-  margin: 0px !important;
-  color: #666;
-
 }
 
 .maintron{
@@ -204,9 +173,6 @@ transition: all 225ms ease;
 	padding-bottom: 7%;
 }
 
-.section-cv{
-	padding-bottom: 150px;
-}
 
 .maintron h1{
 	color: white !important;
@@ -245,7 +211,6 @@ z-index: -100;
 }
 
 .filter{
-	/*background-color: rgba(0, 0, 0, 0.4);*/
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -263,6 +228,7 @@ z-index: -100;
  
 }
 
+/*MENU*/
 .menu{
 	height: 75px;
 	text-align: center !important;
@@ -290,7 +256,7 @@ z-index: -100;
    padding:0;
    position:relative;
    left:50%;
-   text-align:center;;
+   text-align:center;
 }
 
 .menu a {
@@ -306,53 +272,24 @@ z-index: -100;
 .menu a:hover {
 	cursor: pointer;
    text-decoration:none;
+   color: #D3D3D3 !important;
 }
 
-.blogposts {
-  /*background-color: #f9f9f6;*/
-  position: relative;
-  /*top: -60px;*/
+.section-contact a{
+  font-size: 26px !important;
+}
+.section-contact a:hover {
+  cursor: pointer;
 }
 
-.blogposts h2 {
-  text-align: center;
-  margin-top: 80px;
-  font-family: 'Droid Serif', serif;
-}
-.blogposts hr.sm {
-  margin-top: 40px;
-  margin-bottom: 60px;
+.section-contact i:hover {
+  cursor: pointer;
 }
 
-.blog-image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  max-height: 700px;
-}
-.date {
-  text-align: center;
-}
-.center {
-  text-align: center !important;
-}
-.post-text {
-  text-align: left;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 39.5px !important;
-  font-weight: 300;
-  color: #55555c;
-  font-size: 20px;
-}
+
 
 
 /*MOBILE*/
-@media only screen and (max-width : 1220px) {
-}
 
 @media only screen and (max-width : 991px) {
 	.icons .col-md-2 {
@@ -377,9 +314,11 @@ z-index: -100;
 		font-size: 3.4em !important;
 	}
 
-  .card-cv{
-    width: 50%;
+  .text-left{
+    text-align: left !important;
   }
+
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -394,8 +333,16 @@ z-index: -100;
     h1{
     font-size: 2.6em !important;
   }
-  .card-cv{
-    width: 100%;
+
+  .btn-cv{
+  
+  padding: 10px 69px !important;
+}
+
+
+  .menu a{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
 
 	.ingress{
@@ -415,8 +362,14 @@ z-index: -100;
     padding-bottom: 50px !important;
   }
 
+
+  .section-contact{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
 	.icons{
-		padding-bottom: 25px;
+		padding-bottom: 0px;
     padding-top: 0px;
 	}
 
@@ -435,116 +388,23 @@ z-index: -100;
   }
 }
 
-
-
-/*BLOGPOST
-body {
-  font-family: "Source Sans Pro";
-  margin: 0;
-  color: #222;
-  font-weight: 200;
-}*/
-.canvas a {
-  color: #a54399 !important;
-}
-
-.canvas p,
-blockquote {
-  line-height: 1.6em; 
-}
-.canvas p {
-  margin: 0 0 2em;
-}
-blockquote {
-  border-left: 1px solid #ddd;
-  margin: 0 0 1em;
-  padding: 0 0 0 1.5em;
-}
-
-.canvas h1,
- h2 {
-  font-weight: 200 !important;
-  color: #666 !important;
-}
-.canvas h1 {
-  font-size: 3em;
-}
-.canvas h2 {
-  font-size: 2.4em;
-  margin: 0;
-}
-.canvas .date {
-  color: #ccc;
-  font-weight: 200;
-}
-.canvas {
-  max-width: 80em;
-  margin: 0 auto;
-  padding: 0 2em 10em;
-}
-.page-header {
-  padding: 2em 0 1em;
-  margin: 0 0 4em;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-.page-header h1 {
-  margin: 0;
-  padding: 0 0 0.2em;
-  display: inline-block;
-}
-.page-header .summary {
-  letter-spacing: 0.2em;
-  color: #999;
-}
-article {
-  margin: 0 0 6em;
-  padding: 0 0 6em;
+/*MODAL*/
+* {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  position: relative;
+  box-sizing: border-box;
 }
 
 
-article:last-child:after,
-article:last-child:before {
-  display: none;
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-@media screen and (min-width: 40em) {
-  .sticky .stick {
-    position: fixed;
-    top: 0;
-    -webkit-transition: opacity 0.5s;
-            transition: opacity 0.5s;
-    opacity: 1;
-    width: calc(45% - 5.8em);
-  }
-  .sticky.hide .stick {
-    opacity: 0;
-  }
-  article {
-    position: relative;
-  }
-  article {
-    display: table;
-  }
-  article .content,
-  article header {
-    display: table-cell;
-    vertical-align: top;
-  }
-  article .content h2,
-  article header h2 {
-    margin: 0 0 0.4em;
-  }
-  article .content {
-    font-size: 1.2em;
-  }
-  article header {
-    width: 45%;
-    padding-right: 4em;
-  }
-}
+
 
 
 
