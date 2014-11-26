@@ -43,6 +43,12 @@ h1{
 
 }
 
+h2{
+
+  font-size: 2.4em !important;
+  font-weight: 200 !important;
+}
+
 .fill-text{
 	color: #887982;
 	background-color: #887982;
@@ -132,6 +138,10 @@ transition: all 225ms ease;
 	background-color: #f7f7f7;
 	padding-top: 150px;
 	padding-bottom: 150px;
+}
+
+.section-projects img{
+  height: 260px;
 }
 
 .section-projects h2 {
