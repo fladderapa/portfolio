@@ -45,8 +45,11 @@ h3{
   line-height: 1.6em !important;
   font-weight: 400 !important;
   font-family: 'Lato' !important;
-  color: #1a2732 !important;
-  
+  color: #636466 !important;
+}
+
+h4{
+  color: #636466 !important;
 }
 
 .ingress{
@@ -130,6 +133,7 @@ height: 395px;
 padding: 55px;
 -webkit-border-radius: 2px;
 border-radius: 2px;
+
 }
 
 .card-cv{
@@ -262,9 +266,8 @@ z-index: -100;
 .menu a {
 	display:block;
    margin:0 0 0 1px;
-   padding: 25px;
+   padding: 25px 50px 25px 50px;
    text-decoration:none;
-    color: #00B7FF;
   font-size: 18px;
   color: #636466;
 }
