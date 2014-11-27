@@ -389,6 +389,11 @@ z-index: -100;
   .section-projects h2{
     font-size: 35px !important;
   }
+  
+  .section-contact a {
+  font-size: 20px !important;
+  }
+
 }
 
 /*MODAL*/
