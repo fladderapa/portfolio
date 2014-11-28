@@ -9,25 +9,26 @@ block content
 		.container.text-center
 			h1 Alexander Afzelius Puccini
 			p.ingress(style="color: white !important; opacity: 0.9;") På jakt efter praktik
-	.section.menu
+	.section
+		.menu
 			ul
 				li
-					a Om mig
+					a#section-me Om mig
 				li
-					a Projekt
+					a#section-cv Cv
 				li
-					a Cv
+					a#section-projects Projekt
 				li
-					a Kontakt
+					a#section-contact Kontakt
 	.section.section-header
 		.container
 			.row
 				.col-xs-12
 					h1.fill-text.text-center
-						|Jag vill skapa funktionella, inspirerande och responsiva hemsidor.
+						|Jag vill göra internet finare, vackrare, och trevligare.
 					p.ingress.text-center
-						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
-						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
+						|Min ambition är att ligga i webbutvecklingens framkant. Med funktionell
+						| design, användarvänlighet och responsivitet vill jag förmedla bästa möjliga upplvelse.
 			.row.icons
 				.col-md-3
 				.col-md-2.text-center
@@ -121,7 +122,8 @@ block content
 			|Tidigare projekt
 		.container
 			.col-md-4.text-center
-				img(src="/images/alexandraPuccini.png")
+				a(href="http://alexandrapuccini.se", target="_blank")
+					img(src="/images/alexandraPuccini.png")
 				h3 Alexandra Puccini
 				p Den första sidan jag någonsin
 					br
@@ -131,7 +133,8 @@ block content
 					br
 					|till landstingsfullmäktige.
 			.col-md-4.text-center
-				img(src="/images/mstrez.png")
+				a(href="http://109.74.8.246:3000/", target="_blank")
+					img(src="/images/mstrez.png")
 				h3 Mstrez
 				p En sida till musikgruppen Mstrez,
 					br
@@ -141,7 +144,8 @@ block content
 					br
 					|med lätthet hålla oss uppdaterade.
 			.col-md-4.text-center
-				img(src="/images/gullmarsfrisorerna.png")
+				a(href="http://gullmarsfrisörerna.se", target="_blank")
+					img(src="/images/gullmarsfrisorerna.png")
 				h3 Gullmarsfrisörerna
 				p Mitt första riktiga uppdrag
 					br
@@ -159,12 +163,24 @@ block content
 						|Va inte blyg
 					p.ingress.text-center
 						|Du är välkommen att maila mig på 
-						a.fill-text2 alex.afzelius@gmail.com 
+						a#email.fill-text2 alex.afzelius@gmail.com 
 						|eller fånga mig i följande sociala medier.
-					i.fa.fa-facebook.fa-3x.fill-text2
-					i.fa.fa-linkedin.fa-3x.fill-text2
-					i.fa.fa-github.fa-3x.fill-text2
+					a(href="https://www.facebook.com/alex.puccini.98", target="_blank")
+						i.fa.fa-facebook.fa-3x.fill-text2
+					a(href="http://se.linkedin.com/in/afzeliuspuccini", target="_blank")
+						i.fa.fa-linkedin.fa-3x.fill-text2
+					a(href="https://github.com/fladderapa")
+						i.fa.fa-github.fa-3x.fill-text2
 				.col-xs-2
+	script.
+		$("#section-me").click(function() {$('html, body').animate({scrollTop: $(".section-me").offset().top}, 500);});
+		$("#section-cv").click(function() {$('html, body').animate({scrollTop: $(".section-cv").offset().top}, 500);});
+		$("#section-projects").click(function() {$('html, body').animate({scrollTop: $(".section-projects").offset().top}, 500);});
+		$("#section-contact").click(function() {$('html, body').animate({scrollTop: $(".section-contact").offset().top}, 500);});
+
+
+
+
 
 
 

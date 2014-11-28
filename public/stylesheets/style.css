@@ -28,11 +28,12 @@ h1{
   -webkit-font-smoothing: antialiased !important;
   font-family: 'Lato' !important;
   font-style: normal;
+  margin-top: 0px !important;
 
 }
 
 h2{
-  color: #1a2732 !important;
+  color: #636466 !important;
   line-height: 46px !important;
   font-weight: 300 !important;
   font-size: 40px !important;
@@ -94,10 +95,18 @@ h4{
 .section-story, .section-header, .section-contact{
 	padding-top: 150px;
 	padding-bottom: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.section-me, .section-cv{
+ .section-cv{
   padding-bottom: 150px;
+}
+
+.section-me{
+  padding-bottom: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-contact i {
@@ -124,6 +133,8 @@ h4{
   margin: 0px !important;
   color: #666;
 }
+
+
 
 /*CARDS*/
 .card{
@@ -237,7 +248,7 @@ z-index: -100;
 	height: 70px;
 	text-align: center !important;
   width:100%;
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
   background-color: #f7f7f7;
 }
@@ -278,17 +289,25 @@ z-index: -100;
    color: #D3D3D3 !important;
 }
 
-.section-contact a{
+#email {
   font-size: 26px !important;
 }
 .section-contact a:hover {
   cursor: pointer;
 }
 
+.section-contact a {
+  font-size: 14px;
+}
+
 .section-contact i:hover {
   cursor: pointer;
 }
 
+ a:focus {
+  text-decoration: none !important;
+  color: #636466 !important;
+ }
 
 
 
@@ -326,7 +345,7 @@ z-index: -100;
 
 @media only screen and (max-width : 480px) {
 	p{
-		font-size: 1.4em !important;
+		font-size: 1.2em !important;
 	}
 
   article{
@@ -334,7 +353,7 @@ z-index: -100;
   }
 
     h1{
-    font-size: 2.6em !important;
+    font-size: 2.4em !important;
   }
 
   .btn-cv{
@@ -342,15 +361,22 @@ z-index: -100;
   padding: 10px 69px !important;
 }
 
+.card-cv{
+  margin-top: 50px !important;
+}
+
+  h4{
+    font-size: 16px !important;
+  }
 
   .menu a{
     padding-left: 12px !important;
     padding-right: 12px !important;
-    font-size: 16px;
+    font-size: 15px;
   }
 
 	.ingress{
-		font-size: 1.5em !important;
+		font-size: 1.4em !important;
 	}
 
 	.icon{
@@ -391,7 +417,7 @@ z-index: -100;
     font-size: 35px !important;
   }
   
-  .section-contact a {
+  #email  {
   font-size: 20px !important;
   }
 
