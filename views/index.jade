@@ -3,9 +3,10 @@ extends layout
 block content
 	.section.maintron
 		.filter
-		video.img-responsive#bgvid(autoplay='', loop='', poster='http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg')
-			source(src='http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/homepage.webm', type='video/webm')
-			source(src='http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/shutterstock_v3702740_4.m4v', type='video/mp4')
+		video#bgvid(autoplay='', controls muted, loop='', poster='/images/poster.jpg')
+			source(src='/images/video.webm', type='video/webm')
+			source(src='/images/video.mp4', type='video/mp4')
+			source(src='/images/video.ogv', type='video/ogv')
 		.container.text-center
 			h1 Alexander Afzelius Puccini
 			p.ingress(style="color: white !important; opacity: 0.9;") På jakt efter praktik
@@ -54,18 +55,19 @@ block content
 					h1.fill-text.text-center
 						|Min story
 					p.text-center.text-left
-						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
-						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
-						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
-						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
-						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
-						|Min ambition är att ligga i webbutvecklingens framkant, då jag med funktionell
-						| design, användarvänlighet och resposivitet vill förmedla den bästa upplvelse.
+						|Jag är 26år fyllda och studerar just nu till systemutvecklare.NET. 
+						|Jag har emellertid funnit mitt intresse i frontent och det är det jag 
+						|vill jobba med. Men jag tror och hoppas att min förståelse för backend gör 
+						|mig mer attraktiv i min sökan.	Jag har sex års arbetslivserfarenhet, alla 
+						|inom serviceyrken, varav min senaste och nuvarande	arbetsgivare sen tre år 
+						|tillbaks är Casino Cosmopol. På fritiden tränar jag mycket, jag har bestämt 
+						|mig för att det är dags att uppgradera min kropp. Podcast är en annan grej 
+						|jag inte klarar mig utan. Jag poddar konstant!
 	.section.section-cv
 		.container
 			.row
 				.col-md-4
-					.card.text-center
+					.card.text-center(data-sr="enter bottom and scale up 20% over 0.5s")
 						h3 Utbildning
 						p Teknikhögskolan 
 							br
@@ -80,7 +82,7 @@ block content
 							span.year
 								|2005 - 2008
 				.col-md-4
-					.card.text-center
+					.card.text-center(data-sr="enter bottom and scale up 20% over 0.5s")
 						h3 Arbetslivserfarenhet
 						p Casino Cosmopol
 							br
@@ -99,7 +101,7 @@ block content
 							span.year
 								|2007 - 2008
 				.col-md-4
-					.card.text-center
+					.card.text-center(data-sr="enter bottom and scale up 20% over 0.5s")
 						h3 Kurser
 						p Världsmöte - Service i världsklass
 							br
@@ -114,7 +116,7 @@ block content
 							span.year
 								|2008
 		form(method="get" action="/images/Alexander-Afzelius-CV.pdf" target="_blank")
-			.card-cv
+			.card-cv(data-sr="wait 0.5s, then enter bottom and move 50px")
 				button.btn.btn-cv(type="submit")
 					h3(style="color: #1a2732 !important") Fullständigt cv
 	.section.section-projects
@@ -122,7 +124,7 @@ block content
 			|Tidigare projekt
 		.container
 			.col-md-4.text-center
-				a(href="http://alexandrapuccini.se", target="_blank")
+				a(href="http://alexandrapuccini.se", target="_blank", data-sr="enter bottom and scale up 20% over 0.4s")
 					img(src="/images/alexandraPuccini.png")
 				h3 Alexandra Puccini
 				p Den första sidan jag någonsin
@@ -133,7 +135,7 @@ block content
 					br
 					|till landstingsfullmäktige.
 			.col-md-4.text-center
-				a(href="http://109.74.8.246:3000/", target="_blank")
+				a(href="http://109.74.8.246:3000/", target="_blank", data-sr="enter bottom and scale up 20% over 0.6s")
 					img(src="/images/mstrez.png")
 				h3 Mstrez
 				p En sida till musikgruppen Mstrez,
@@ -144,7 +146,7 @@ block content
 					br
 					|med lätthet hålla oss uppdaterade.
 			.col-md-4.text-center
-				a(href="http://gullmarsfrisörerna.se", target="_blank")
+				a(href="http://gullmarsfrisörerna.se", target="_blank", data-sr="enter bottom and scale up 20% over 0.8s")
 					img(src="/images/gullmarsfrisorerna.png")
 				h3 Gullmarsfrisörerna
 				p Mitt första riktiga uppdrag
@@ -173,6 +175,7 @@ block content
 						i.fa.fa-github.fa-3x.fill-text2
 				.col-xs-2
 	script.
+		window.sr = new scrollReveal();
 		$("#section-me").click(function() {$('html, body').animate({scrollTop: $(".section-me").offset().top}, 500);});
 		$("#section-cv").click(function() {$('html, body').animate({scrollTop: $(".section-cv").offset().top}, 500);});
 		$("#section-projects").click(function() {$('html, body').animate({scrollTop: $(".section-projects").offset().top}, 500);});
