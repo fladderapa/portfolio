@@ -64,30 +64,35 @@ h4{
 }
 
 
-.fill-text{
+.backgroundclip .fill-text{
 	color: #887982;
-	background-color: #887982;
 	background-image: url("/images/purple.svg");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.fill-text2{
+.backgroundclip .fill-text{
   color: #887982;
-  background-color: #887982;
+  
+}
+
+.backgroundclip .fill-text2{
+  color: #887982;
   background-image: url("/images/purple2.svg");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+ .fill-text2{
+  color: #887982;
 }
 
 /*SECTIONS*/
@@ -143,6 +148,7 @@ height: 395px;
 padding: 55px;
 -webkit-border-radius: 2px;
 border-radius: 2px;
+-moz-border-radius: 2px;
 
 }
 
@@ -158,6 +164,8 @@ width: 100%;
   background-color: #f7f7f7;
   padding: 10px 125px !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .card-cv :hover{
@@ -233,9 +241,10 @@ z-index: -100;
 	z-index: -50;
 	color: #887982;
 	background-color: #887982;
-	background-image: url(http://andershede.com/wp-content/uploads/2014/07/Godsbanen1.svg);
+	background-image: url("/images/purple2.svg");
 	opacity: 0.7;
 	-webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
