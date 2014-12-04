@@ -64,37 +64,32 @@ h4{
 }
 
 
-.backgroundclip .fill-text{
-	color: #887982;
-	background-image: url("/images/purple.svg");
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
  .fill-text{
   color: #887982;
-  background-image: none;
-  
-}
-
-.backgroundclip .fill-text2{
-  color: #887982;
-  background-image: url("/images/purple2.svg");
+    background: -webkit-linear-gradient(transparent, transparent),
+      url("/images/purple.svg") repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  
 }
+
 
  .fill-text2{
   color: #887982;
-  background-image: url("/images/purple2.svg");
+  background: -webkit-linear-gradient(transparent, transparent),
+    url("/images/purple2.svg") repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*SECTIONS*/
