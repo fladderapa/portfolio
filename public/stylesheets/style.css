@@ -68,7 +68,9 @@ h4{
  .fill-text{
   color: #887982;
     background: -webkit-linear-gradient(transparent, transparent),
-      url("/images/purple.svg") repeat;
+      url("/images/purple.svg") repeat;    
+    background: -o-linear-gradient(transparent, transparent),
+    url("/images/purple.svg") repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -83,6 +85,8 @@ h4{
  .fill-text2{
   color: #887982;
   background: -webkit-linear-gradient(transparent, transparent),
+    url("/images/purple2.svg") repeat;
+  background: -o-linear-gradient(transparent, transparent),
     url("/images/purple2.svg") repeat;
   -webkit-background-size: cover;
   background-size: cover;
