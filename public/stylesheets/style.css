@@ -242,7 +242,7 @@ z-index: -100;
 	z-index: -50;
 	color: #887982;
 	background-color: #887982;
-	background-image: url("/images/purple2.svg");
+  background:url("/images/purple2.svg") 0 0 / auto 0 repeat-x fixed;
 	opacity: 0.7;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
