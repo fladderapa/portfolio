@@ -236,8 +236,8 @@ z-index: -100;
 .filter{
 	top: 0;
 	left: 0;
-	bottom: 0;
-	right: 0;
+  height: 100%;
+  width: 100%;
 	position: absolute;
 	z-index: -50;
 	color: #887982;
@@ -249,10 +249,6 @@ z-index: -100;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-  src='/images/purple2.svg',
-  sizingMethod='scale')";
 }
 
 /*MENU*/
